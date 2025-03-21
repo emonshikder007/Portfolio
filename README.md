@@ -28,9 +28,9 @@ Check out my portfolio live here: []
 ## 📧 Contact
 If you have any suggestions or feedback, feel free to reach out!
 
-📩 Email: [your-email@example.com](emonshikder2217@gmail.com)  
-🔗 GitHub: [github.com/your-github-username](https://github.com/emon-shikder2217)  
-🔗 LinkedIn: [linkedin.com/in/your-profile](https://linkedin.com/in/emonshikder2217)  
+📩 Email: [emonshikder2217@gmail.com](emonshikder2217@gmail.com)  
+🔗 GitHub: [Github](https://github.com/emon-shikder2217)  
+🔗 LinkedIn: [Linkedin](https://linkedin.com/in/emonshikder2217)  
 
 ---
 
