@@ -4,7 +4,7 @@ import { FaArrowLeft } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import calculator from "../../assets/scientific_calculator.png";
 import html from '../../assets/html.png';
-import css from '../../assets/css-removebg-preview.png';
+import css from '../../assets/css_img.png';
 import js from '../../assets/javascript-removebg-preview.png';
 
 const SintificCalculatorDetails = () => {

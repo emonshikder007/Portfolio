@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./ChatmeeDetails.css";
 import { FaArrowLeft } from "react-icons/fa";
-import tailwind from "../../assets/tailwindcss.png";
+import css from "../../assets/css_img.png";
 import react from "../../assets/react.png";
 import node from "../../assets/Node.js.png";
 import express from "../../assets/Express.png";
@@ -46,15 +46,15 @@ const ChatmeeDetails = () => {
               </div>
               <div className="react_text">
                 <p>
-                  Basic React, hooks, Virtual DOM, context API, React Router,
-                  Recharts, Payment gateway, etc.
+                  Basic React, hooks, Virtual DOM, React Router,
+                  Recharts etc.
                 </p>
               </div>
             </div>
             <div className="tailwind_container">
               <div className="tailwind_header">
-                <img src={tailwind} alt="Tailwind" />
-                <h2>Tailwind</h2>
+                <img src={css} alt="Tailwind" />
+                <h2>CSS</h2>
               </div>
               <div className="tailwind_text">
                 <p>Utility-first CSS framework for rapid UI development</p>
