@@ -1,0 +1,82 @@
+import { useState } from "react";
+import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom"; // Import Link
+import "./Projects.css";
+import chatmeee_home from "../../assets/chatmee_home.png";
+import tomato from "../../assets/tomato.png";
+import scientificCalculator from "../../assets/scientific_calculator.png";
+
+export default function HoverEffectCards() {
+  const projects = [
+    {
+      img: chatmeee_home,
+      title: "ChatMee",
+      route: "/chatmee-details",
+    },
+    {
+      img: tomato,
+      title: "Tomato",
+      route: "/tomato-details",
+    },
+    {
+      img: scientificCalculator,
+      title: "Scientific Calculator",
+      route: "/calculator-details",
+    },
+    {
+      img: "project.png",
+      title: "Project",
+      route: "/project",
+    },
+  ];
+
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+
+  return (
+    <section className="project_section" id="projects">
+      <div className="projects_header" data-aos="zoom-in">
+        <h1 className="project_title" data-aos="zoom-in">
+          My <span className="projects_span">Projects</span>
+        </h1>
+      </div>
+      <div className="cards-container">
+        {projects.map((project, index) => {
+          const projectClass = project.title.toLowerCase().replace(/\s+/g, "-");
+
+          const aosAnimations = [
+            "fade-down-right",
+            "fade-down-left",
+            "fade-up-right",
+            "fade-up-left",
+          ];
+
+          return (
+            <div
+              key={index}
+              className={`project-card ${projectClass}`}
+              onMouseEnter={() => setHoveredIndex(index)}
+              onMouseLeave={() => setHoveredIndex(null)}
+              data-aos={index < 4 ? aosAnimations[index] : ""}
+            >
+              <div className="project-text">
+                <h3>{project.title}</h3>
+              </div>
+              <div className="card">
+                <img src={project.img} alt={project.title} />
+                <div className="arrow_container">
+                  <Link to={project.route}>
+                    <FaArrowRight
+                      className={`arrow-icon ${
+                        hoveredIndex === index ? "visible" : ""
+                      }`}
+                    />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </section>
+  );
+}

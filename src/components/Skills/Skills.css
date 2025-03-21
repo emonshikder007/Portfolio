@@ -1,0 +1,272 @@
+#skills {
+
+  min-height: 140vh;
+
+  overflow: hidden;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+
+}
+
+
+
+.main_container {
+
+  text-align: center;
+
+  padding: 50px;
+
+}
+
+.skills_title {
+
+  margin-bottom: 50px;
+
+  position: relative;
+
+}
+
+
+.skills_title::before {
+
+  content: '';
+
+  height: 0;
+
+  width: 30rem;
+
+  position: absolute;
+
+
+
+  box-shadow:
+   0 0 900px 50px rgb(255, 0, 153),
+   0 0 1000px 60px #49066E,
+   0 0 999px 35px rgb(255, 0, 135),
+   0 0 999px 30px #49066E,
+   0 0 800px 30px rgb(249, 74, 255),
+   0 0 1200px 100px rgb(255, 0, 153);
+
+
+  z-index: -1;
+
+  opacity: 0.4;
+
+  rotate: -10deg;
+
+
+
+  left: 50%;
+  transform: translateX(-50%);
+  
+}
+
+
+
+.skills-title {
+
+  font-size: 5rem;
+
+  font-weight: 700;
+
+  font-family: Outfit, sans-serif;
+
+  letter-spacing: 3px;
+
+}
+
+
+
+.skills_span {
+
+  background: #FF0099;
+
+  background: linear-gradient(to right, #CF48CF 0%, #FF0099 100%);
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+
+  letter-spacing: 0.09em;
+
+}
+
+
+.skills-wrapper {
+
+  width: 100%;
+
+  overflow: hidden;
+
+  position: relative;
+
+  display: flex;
+
+  white-space: nowrap;
+
+  height: 100%;
+
+}
+
+.line {
+  position: absolute;
+}
+
+
+.skills-container {
+
+  display: flex;
+
+  gap: 30px;
+
+  animation: scroll-animation 40s linear infinite;
+
+  position: relative;
+
+}
+
+
+.skills-container::before {
+
+  position: absolute;
+
+  content: '';
+
+  height: 6%;
+
+  width: 30px;
+
+  box-shadow: 0 0 500px 20px rgb(255, 0, 153),
+              0 0 700px 30px rgb(255, 0, 153),
+              0 0 500px 10px #49066E;
+
+  z-index: 1;
+
+ background: rgb(255, 0, 153);
+
+ filter: blur(110px);
+
+
+ rotate: 40deg;
+
+ top: 10%;
+
+  
+}
+
+
+
+
+.skill-card {
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 20px;
+
+  width: 340px;
+
+  height: 340px;
+
+  margin-top: 25px;
+
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+}
+
+
+
+
+
+
+.skill-card img {
+
+  width: 250px;
+
+  height: 250px;
+
+  margin-bottom: 10px;
+
+  cursor: pointer;
+
+  z-index: 999;
+
+}
+
+
+
+@keyframes scroll-animation {
+
+  from {
+
+    transform: translateX(0);
+
+  }
+
+  to {
+
+    transform: translateX(-33.33%);
+
+  }
+
+}
+
+.up-down {
+
+  animation: up-down 2.5s ease-in-out infinite;
+
+}
+
+@keyframes up-down {
+
+  0%,
+  100% {
+
+    transform: translateY(40px);
+
+  }
+
+  50% {
+
+    transform: translateY(-30px);
+
+  }
+
+}
+
+
+.down-up {
+
+  animation: down-up 2.5s ease-in-out infinite;
+
+}
+
+
+@keyframes down-up {
+
+  0%,
+  100% {
+
+    transform: translateY(-30px);
+
+  }
+
+  50% {
+
+    transform: translateY(40px);
+
+  }
+
+}

@@ -1,0 +1,524 @@
+
+
+ .project_section {
+ 
+   min-height: 100vh;
+ 
+   padding: 50px 20px;
+ 
+   justify-content: center;
+ 
+   align-items: center;
+ 
+ }
+
+ 
+ .project_title {
+
+  font-size: 4.5rem;
+
+  font-weight: 700;
+
+  font-family: Outfit, sans-serif;
+
+  text-align: center;
+
+}
+
+.projects_span {
+
+  background: #FF0099;
+
+  background: linear-gradient(to right, #CF48CF 0%, #FF0099 100%);
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+
+  letter-spacing: 0.09em;
+
+}
+ 
+ .cards-container {
+ 
+   display: grid;
+ 
+   grid-template-columns: repeat(2, 1fr);
+ 
+   gap: 40px;
+
+   margin-top: 100px;
+ 
+ }
+
+
+
+ .projects_header {
+
+  position: relative;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+ }
+
+
+ .projects_header::before {
+
+  content: '';
+
+  height: 0;
+
+  width: 30rem;
+
+  position: absolute;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  box-shadow:
+   0 0 900px 50px rgb(255, 0, 153),
+   0 0 1000px 60px #49066E,
+   0 0 999px 35px rgb(255, 0, 135),
+   0 0 999px 30px #49066E,
+   0 0 800px 30px rgb(249, 74, 255),
+   0 0 1200px 100px rgb(255, 0, 153);
+
+
+  z-index: -1;
+
+  opacity: 0.4;
+
+  rotate: -10deg;
+
+ }
+
+
+ 
+ .project-card {
+ 
+   display: flex;
+ 
+   align-items: center;
+ 
+   justify-content: space-between;
+ 
+   width: 600px;
+ 
+   gap: 20px;
+ 
+   padding: 15px;
+ 
+   border-radius: 15px;
+ 
+   position: relative;
+ 
+   overflow: hidden;
+ 
+ }
+ 
+ .project-card:hover {
+ 
+   cursor: pointer;
+ 
+ }
+ 
+ .project-text {
+ 
+   flex: 1;
+ 
+   text-align: left;
+ 
+   color: #fff;
+ 
+ }
+ 
+ .project-text h3 {
+ 
+   font-size: 40px;
+
+   font-weight: 500;
+ 
+   margin-bottom: 10px;
+ 
+   color: #fff;
+
+   margin-left: 30px;
+
+   font-family: "outfit", sans-serif;
+ 
+ }
+ 
+
+
+ .card {
+ 
+   width: 250px;
+ 
+   height: 150px;
+ 
+   position: relative;
+ 
+   border-radius: 10px;
+ 
+   overflow: hidden;
+ 
+   background: #fff;
+ 
+   transition: transform 0.5s ease, box-shadow 0.5s ease;
+ 
+   transform: perspective(1000px);
+ 
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+ 
+ }
+ 
+ 
+ 
+ .card img {
+ 
+   width: 100%;
+ 
+   height: 100%;
+ 
+   object-fit: cover;
+ 
+   border-radius: 10px;
+ 
+   transition: transform 0.5s ease;
+ 
+ }
+ 
+ .card:hover img {
+ 
+   transform: scale(1.1);
+ 
+ }
+
+ 
+ 
+ .arrow-icon {
+ 
+   position: absolute;
+ 
+   right: 10px;
+ 
+   bottom: 15px;
+ 
+   font-size: 35px;
+ 
+   color: rgb(232, 0, 139);
+ 
+   opacity: 0;
+ 
+   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+ 
+ }
+ 
+ .arrow-icon.visible {
+ 
+   opacity: 1;
+ 
+   transform: translateX(10px);
+ 
+ }
+ 
+ .project-card.chatmee {
+ 
+   margin-left: 50px;
+ 
+   background: #181A1E;
+ 
+   box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.1 );
+ 
+   backdrop-filter: blur( 2px );
+ 
+   -webkit-backdrop-filter: blur( 2px );
+ 
+   border-radius: 10px;
+ 
+   border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+   transition: 0.1s ease;
+ 
+ }
+
+
+ .project-card.chatmee::before {
+
+  content: '';
+
+  position: absolute;
+
+  height: 10%;
+
+  width: 30px;
+
+  box-shadow: 0 0 500px 20px rgb(255, 0, 153),
+              0 0 700px 30px rgb(255, 0, 153),
+              0 0 500px 10px #49066E;
+
+  left: 80%;
+
+  z-index: 1;
+
+ background: rgb(255, 0, 153);
+
+ filter: blur(110px);
+
+  
+}
+
+
+.project-card.chatmee::after {
+
+  position: absolute;
+
+  content: '';
+
+  filter: blur(110px);
+
+  z-index: 1;
+
+  width: 30px;
+
+  height: 10%;
+
+  background: #49066E;
+
+  box-shadow: 0 0 500px 60px #49066E,
+              0 0 700px 70px #49066E,
+              0 0 500px 30px rgb(255, 0, 153);
+
+  margin-bottom: 50%;
+
+  margin-left: 20%;
+
+}
+ 
+ .project-card.tomato {
+ 
+  background: #181A1E;
+ 
+   box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.1 );
+ 
+   backdrop-filter: blur( 2px );
+ 
+   -webkit-backdrop-filter: blur( 2px );
+ 
+   border-radius: 10px;
+ 
+   border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+   position: relative;
+
+   transition: 0.1s ease;
+
+ }
+
+
+ .project-card.tomato::before {
+
+  content: '';
+
+  position: absolute;
+
+  height: 10%;
+
+  width: 30px;
+
+  box-shadow: 0 0 500px 30px rgb(255, 0, 153),
+              0 0 700px 40px rgb(255, 0, 153),
+              0 0 500px 15px #49066E;
+
+  z-index: 1;
+
+ background: rgb(255, 0, 153);
+
+ filter: blur(110px);
+
+ margin-bottom: 15%;
+
+  
+}
+
+.project-card.tomato::after {
+
+  position: absolute;
+
+  content: '';
+
+  filter: blur(110px);
+
+  z-index: 1;
+
+  width: 30px;
+
+  height: 10%;
+
+  background: #49066E;
+
+  box-shadow: 0 0 500px 30px #49066E,
+              0 0 700px 40px #49066E,
+              0 0 500px 30px rgb(255, 0, 153);
+
+  margin-left: 80%;
+
+}
+
+
+ 
+ .project-card.scientific-calculator {
+ 
+  background: #181A1E;
+ 
+   box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.1 );
+ 
+   backdrop-filter: blur( 2px );
+ 
+   -webkit-backdrop-filter: blur( 2px );
+ 
+   border-radius: 10px;
+ 
+   border: 1px solid rgba( 255, 255, 255, 0.18 );
+   
+   margin-left: 50px;
+ 
+   margin-top: 55px;
+
+   position: relative;
+
+   transition: 0.1s ease;
+ 
+ }
+
+
+ .project-card.scientific-calculator::before {
+
+  content: '';
+
+  position: absolute;
+
+  height: 10%;
+
+  width: 30px;
+
+  box-shadow: 0 0 500px 60px #49066E,
+              0 0 700px 80px #49066E,
+              0 0 500px 30px rgb(255, 0, 153);
+
+  z-index: 1;
+
+ background: rgb(255, 0, 153);
+
+ filter: blur(110px);
+
+ margin-bottom: 15%;
+
+ margin-left: 50%;
+
+
+ }
+ 
+ .project-card.project {
+ 
+   margin-top: 55px;
+ 
+   width: 600px;
+ 
+   padding: 15px;
+ 
+   background: #181A1E;
+ 
+ box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.1 );
+ 
+ backdrop-filter: blur( 2px );
+ 
+ -webkit-backdrop-filter: blur( 2px );
+ 
+ border-radius: 10px;
+ 
+ border: 1px solid rgba( 255, 255, 255, 0.18 );
+ 
+ height: 180px;
+
+ position: relative;
+
+ transition: 0.1s ease;
+ 
+ }
+
+ .project-card.project::before {
+
+  position: absolute;
+
+  content: '';
+
+  height: 10%;
+
+  width: 30px;
+
+  box-shadow: 0 0 500px 40px rgb(255, 0, 153),
+              0 0 700px 40px rgb(255, 0, 135),
+              0 0 500px 10px #49066E;
+
+  z-index: 1;
+
+ background: rgb(255, 0, 153);
+
+ filter: blur(110px);
+
+ margin-bottom: 30%;
+
+ margin-left: 5%;
+
+ }
+
+
+ .project-card.chatmee:hover,
+ .project-card.scientific-calculator:hover,
+ .project-card.tomato:hover,
+ .project-card.project:hover {
+
+  transform: scale(1.03);
+
+ }
+
+
+ 
+ @media (max-width: 768px) {
+ 
+   .cards-container {
+ 
+     grid-template-columns: 1fr;
+ 
+   }
+ 
+ 
+   .project-card {
+ 
+     flex-direction: column;
+ 
+     align-items: center;
+ 
+     width: 90%;
+ 
+     text-align: center;
+ 
+   }
+ 
+   .card {
+ 
+     width: 100%;
+ 
+     height: 200px;
+ 
+   }
+ 
+ }

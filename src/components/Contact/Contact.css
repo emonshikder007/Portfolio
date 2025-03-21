@@ -1,0 +1,542 @@
+
+
+ .contact_section {
+
+    min-height: 130vh;
+
+    position: relative;
+
+ }
+
+ .contact_section::before {
+
+  position: absolute;
+
+  content: '';
+
+  height: 0;
+
+  width: 20%;
+
+  box-shadow: 0 0 800px 25px rgb(255, 0, 153),
+              0 0 700px 26px #49066E;
+
+  top: 50%;
+
+  rotate: -30deg;
+
+  opacity: 0.5;
+
+  right: 95%;
+
+ }
+
+
+ 
+ .contact_header {
+
+   position: relative;
+ 
+   display: flex;
+ 
+   justify-content: center;
+ 
+   align-items: center;
+
+   margin-top: 80px;
+ 
+  }
+
+
+  
+ .contact_header::before {
+
+   content: '';
+ 
+   height: 0;
+ 
+   width: 30rem;
+ 
+   position: absolute;
+ 
+   display: flex;
+ 
+   justify-content: center;
+ 
+   align-items: center;
+ 
+   box-shadow:
+    0 0 900px 50px rgb(255, 0, 153),
+    0 0 1000px 60px #49066E,
+    0 0 999px 35px rgb(255, 0, 135),
+    0 0 999px 30px #49066E,
+    0 0 800px 30px rgb(249, 74, 255),
+    0 0 1200px 100px rgb(255, 0, 153);
+ 
+ 
+   z-index: -1;
+ 
+   opacity: 0.4;
+ 
+   rotate: 5deg;
+ 
+  }
+
+
+
+
+  .contact_title {
+
+   font-size: 4.5rem;
+ 
+   font-weight: 700;
+ 
+   font-family: Outfit, sans-serif;
+ 
+   text-align: center;
+ 
+ }
+
+
+
+  .form {
+
+   display: flex;
+
+   flex-direction: column;
+
+   justify-content: centr;
+
+   max-width: 750px;
+
+   width: 100%;
+
+   padding: 25px 25px 30px;
+
+   height: 34rem;
+
+   margin-top: 6.4rem;
+
+   margin-left: 27%;
+
+   border-radius: 15px;
+
+   background: #181A1E;
+ 
+   box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.1 );
+ 
+   backdrop-filter: blur( 2px );
+
+   -webkit-backdrop-filter: blur( 2px );
+
+   border: 0.1px solid rgba(255,255,255,.5);
+
+   position: relative;
+
+  }
+
+
+  .form::before {
+
+    position: absolute;
+
+    content: '';
+
+    height: 10%;
+
+    width: 40px;
+
+    box-shadow: 0 0 500px 20px rgb(255, 0, 153),
+                0 0 700px 30px rgb(255, 0, 153),
+                0 0 500px 10px #49066E;
+
+    z-index: 1;
+
+    left: 90%;
+
+   background: rgb(255, 0, 153);
+
+   filter: blur(110px);
+
+  }
+
+
+  .form::after {
+
+    content: '';
+
+    position: absolute;
+
+    
+    height: 10%;
+
+    width: 40px;
+
+    box-shadow: 0 0 500px 20px #49066E,
+                0 0 700px 30px #49066E,
+                0 0 500px 10px #49066E;
+
+    z-index: 1;
+
+   background: #49066E;
+
+   filter: blur(110px);
+
+   top: 90%;
+
+
+  }
+
+
+  .email_input {
+
+   margin-top: 20px;
+
+  }
+
+  .message_area {
+
+   margin-top: 20px;
+
+  }
+
+
+  .name {
+
+    position: relative;
+
+    height: 80px;
+
+    line-height: 90px;
+
+    margin-left: 3rem;
+
+    margin-top: 3rem;
+
+  }
+
+
+  .name_input {
+
+    position: absolute;
+
+    width: 90%;
+
+    outline: none;
+
+    font-size: 1.2em;
+
+    padding: 0 30px;
+
+    line-height: 60px;
+
+    border-radius: 10px;
+
+    border: 1px solid #49066E;
+
+    background: transparent;
+
+    transition: 0.1s ease;
+
+    z-index: 1111;
+
+  }
+
+
+  .labelline {
+    
+    position: absolute;
+
+    font-size: 1.2em;
+
+    color: #fff;
+
+    padding: 0  25px;
+
+    margin: -12px 20px;
+
+    transition: 0.2s ease;
+
+    background: #181A1E;
+
+  }
+
+
+  .name_input:focus,
+  .name_input:valid {
+
+    color: rgb(255, 0, 135);
+
+    border: 2px solid rgb(255, 0, 153);
+
+  }
+
+  .name_input:focus + .labelline,
+  .name_input:valid + .labelline {
+
+    color: rgb(255, 0, 135);
+
+    height: 30px;
+
+    line-height: 30px;
+
+    transform: translate(-15px, -6px) scale(0.88);
+
+    z-index: 1111;
+
+    padding: 0 12px;
+
+  }
+
+
+  
+  .email {
+
+    position: relative;
+
+    height: 80px;
+
+    line-height: 90px;
+
+    margin-left: 3rem;
+
+    margin-top: 0.2rem;
+
+  }
+
+  .email_input {
+
+    position: absolute;
+
+    width: 90%;
+
+    outline: none;
+
+    font-size: 1.2em;
+
+    padding: 0 30px;
+
+    line-height: 60px;
+
+    border-radius: 10px;
+
+    border: 1px solid #49066E;
+
+    background: transparent;
+
+    transition: 0.1s ease;
+
+    z-index: 1111;
+
+  }
+
+
+  .label_line {
+    
+    position: absolute;
+
+    font-size: 1.2em;
+
+    color: #fff;
+
+    padding: 0  25px;
+
+    margin: 5px 20px;
+
+    transition: 0.2s ease;
+
+    background: #181A1E;
+
+  }
+
+
+  .email_input:focus,
+  .email_input:valid {
+
+    color: rgb(255, 0, 135);
+
+    border: 2px solid rgb(255, 0, 153);
+
+  }
+
+
+
+  .email_input:focus + .label_line,
+  .email_input:valid + .label_line {
+
+    color: rgb(255, 0, 135);
+
+    height: 30px;
+
+    line-height: 30px;
+
+    transform: translate(10px, -3px) scale(0.88);
+
+    z-index: 1111;
+
+    padding: 0 12px;
+
+  }
+
+  .textarea {
+
+      position: relative;
+  
+      height: 80px;
+  
+      line-height: 90px;
+  
+      margin-left: 3rem;
+  
+      margin-top: 2.5rem;
+  
+  }
+
+
+  .message_input {
+
+    
+    position: absolute;
+
+    width: 90%;
+
+    outline: none;
+
+    font-size: 1.2em;
+
+    padding: 0 30px;
+
+    height: 170px;
+
+    border-radius: 10px;
+
+    border: 1px solid #49066E;
+
+    background: transparent;
+
+    transition: 0.1s ease;
+
+    z-index: 1111;
+
+  }
+
+
+  .label_line_msg {
+    
+    position: absolute;
+
+    font-size: 1.2em;
+
+    color: #fff;
+
+    padding: 0 25px;
+
+    margin: -2px 15px;
+
+    transition: 0.2s ease;
+
+    background: #181A1E;
+
+  }
+
+
+  .message_input:focus,
+  .message_input:valid {
+
+    color: rgb(255, 0, 135);
+
+    border: 2px solid rgb(255, 0, 153);
+
+  }
+
+
+  .message_input:focus + .label_line_msg,
+  .message_input:valid + .label_line_msg {
+
+    color: rgb(255, 0, 135);
+
+    height: 30px;
+
+    line-height: 30px;
+
+    transform: translate(10px, -12px) scale(0.88);
+
+    z-index: 1111;
+
+    padding: 0 20px;
+
+  }
+
+
+  .contact_btn {
+
+    margin-top: 120px;
+
+    margin-left: 7%;
+
+    cursor: pointer;
+
+    height: 55px;
+
+    width: 84%;
+
+    background: linear-gradient(45deg, rgb(255, 0, 153), #49066E);
+
+    border-radius: 9px;
+
+    font-size: 20px;
+
+    font-family: 'outfit', sans-serif;
+
+    font-weight: 400;
+
+    color: #a0a0a0;
+
+    letter-spacing: 1px;
+
+    transition: 0.1s ease;
+
+    position: relative;
+
+  }
+
+  .contact_btn:hover {
+
+    color: #fff;
+
+  }
+
+
+  .contact_btn:active {
+
+    transform: scale(0.7);
+
+  }
+
+
+  .contact_btn::before {
+
+    content: '';
+
+    position: absolute;
+
+    height: 10%;
+
+    width: 40px;
+
+    box-shadow: 0 0 500px 20px rgb(255, 0, 153),
+                0 0 700px 30px rgb(255, 0, 153),
+                0 0 500px 30px #49066E;
+
+    z-index: 1;
+
+   background: rgb(255, 0, 153);
+
+   filter: blur(110px);
+
+   left: 95%;
+
+   bottom: 45%;
+
+
+  }
