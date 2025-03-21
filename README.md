@@ -3,7 +3,7 @@
 Welcome to my portfolio website! This project showcases my skills, projects, and experience in an interactive and visually appealing way.
 
 ## 🚀 Live Demo
-Check out my portfolio live here: [)
+Check out my portfolio live here: []
 
 
 ## 🎨 Features
@@ -22,7 +22,7 @@ Check out my portfolio live here: [)
 ## 📦 Installation & Usage
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-github-username/your-repo-name.git
+   git clone https://github.com/emon-shikder2217/my_portfolio.git
 
 
 ## 📧 Contact
