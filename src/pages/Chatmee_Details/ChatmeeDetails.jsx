@@ -16,7 +16,7 @@ import vite from "../../assets/Vite.js.png";
 import axios from "../../assets/axios.svg";
 import ImageSlider from "../../components/ImageSlider/ImageSlider";
 
-const ChatmeeDetails = () => {
+const ChatWithMeInfo = () => {
   return (
     <section className="chatmee-details_section">
       <div className="chatmee_container">
@@ -161,4 +161,4 @@ const ChatmeeDetails = () => {
   );
 };
 
-export default ChatmeeDetails;
+export default ChatWithMeInfo;
