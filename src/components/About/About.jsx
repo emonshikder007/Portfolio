@@ -1,11 +1,10 @@
 import React from "react";
 import "./About.css";
-import VanillaTilt from 'vanilla-tilt';
 import { FaBookOpen } from "react-icons/fa6";
 import { GoGoal } from "react-icons/go";
 import { IoBalloonSharp } from "react-icons/io5";
 import myImage from "../../assets/img.jpg";
-import aboutImg from '../../assets/about_page.png'
+import aboutImg from "../../assets/about_page.png";
 
 const About = () => {
   return (
@@ -19,7 +18,7 @@ const About = () => {
           About <span className="span_me">Me</span>
         </h1>
       </div>
-      <div className="content_container" data-tilt>
+      <div className="content_container">
         <div
           className="light-container"
           data-aos="zoom-out"
@@ -35,7 +34,7 @@ const About = () => {
             data-aos-duration="300"
           >
             <div className="learning_journey_text">
-            <div className="learning_heading">
+              <div className="learning_heading">
                 <div className="logo">
                   <FaBookOpen />
                 </div>
@@ -88,17 +87,13 @@ const About = () => {
           </div>
         </div>
         <div className="picture_container">
-        <div className="new-picture-container">
-          <img src="" alt="" />
+          <div className="new-picture-container">
+            <img src="" alt="" />
+          </div>
         </div>
       </div>
-      </div>
-      
     </section>
   );
 };
 
 export default About;
-
-
-

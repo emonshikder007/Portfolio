@@ -1,4 +1,5 @@
 import React from "react";
+import clickSound from "../../assets/click.mp3";
 import "./Hero.css";
 import { useState, useEffect } from "react";
 
@@ -41,6 +42,11 @@ const Hero = () => {
     return () => clearTimeout(timeout);
   }, [charIndex, isDeleting, textIndex]);
 
+  const playSound = () => {
+    const audio = new Audio(clickSound);
+    audio.play();
+  };
+
   return (
     <main id="home">
       <div className="content" data-aos="fade-right" data-aos-duration="1000">
@@ -55,7 +61,7 @@ const Hero = () => {
           <span className="cursor">|</span>
         </div>
 
-     <button className="btn"  data-aos="zoom-in" data-aos-duration="1000">
+     <button className="btn" onClick={playSound} data-aos="zoom-in" data-aos-duration="1000">
        Watch My Resume
      </button>
 
