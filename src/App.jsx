@@ -11,7 +11,7 @@ const App = () => {
     const handleWheel = (e) => {
       e.preventDefault();
       window.scrollBy({
-        top: e.deltaY * 0.5,
+        top: e.deltaY * 0.7,
         behavior: "smooth",
       });
     };

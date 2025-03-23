@@ -46,7 +46,7 @@ export default function HoverEffectCards() {
 
   return (
     <>
-      <ScrollToTop /> {/* Scroll to Top Component */}
+      <ScrollToTop />
       <section className="project_section" id="projects">
         <div className="projects_header" data-aos="zoom-in">
           <h1 className="project_title" data-aos="zoom-in">
