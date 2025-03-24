@@ -6,8 +6,6 @@
 
    min-height: 160vh;
 
-    
-
   }
 
 
@@ -89,9 +87,11 @@
 
   }
 
-  .content_container {
+  .about-container {
 
     display: flex;
+
+    flex-direction: row;
 
     border: 0.1px solid rgba(255,255,255,.5);
 
@@ -113,7 +113,7 @@
 
   
 
-  .content_container::before {
+  .about-container::before {
 
     content: '';
 
@@ -138,7 +138,7 @@
     
 }
 
-.content_container::after {
+.about-container::after {
 
   content: '';
 
@@ -561,3 +561,19 @@
 
 }
 
+
+
+@media (max-width: 768px) {
+
+  .about_section {
+
+    display: flex;
+
+    flex-direction: column;
+
+  }
+
+ 
+  
+
+}
