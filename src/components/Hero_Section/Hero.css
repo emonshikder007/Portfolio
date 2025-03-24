@@ -331,24 +331,17 @@
 }
 
 @media (max-width: 768px) {
-
-    #home {
-
-        overflow-x: hidden;
-
-    }
+    
 
     .content {
 
         margin-top: 20rem;
 
-    }
-
-    .content {
-
         max-width: 30rem;
 
         margin-left: 10%;
+
+        overflow-x: hidden;
 
     }
 

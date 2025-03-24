@@ -135,7 +135,7 @@ nav a:hover {
 
     header {
 
-        padding: 1rem 0.1rem;
+        padding: 1rem 1.2rem;
 
     }
 
@@ -154,6 +154,14 @@ nav a:hover {
     .btn-signing {
 
         padding: 0.6rem 1.5rem;
+
+    }
+
+    .social_icon {
+
+        font-size: 1.5rem;
+
+        margin-right: 2rem;
 
     }
 

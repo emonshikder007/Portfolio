@@ -108,9 +108,15 @@
 
        top: -25%;
 
-       margin-right: 40%;
+       margin-left: -60%;
 
        position: absolute;
+
+   }
+
+   .container {
+
+      padding: 0 1rem;
 
    }
 
@@ -122,12 +128,8 @@
 
  }
 
- .object {
 
-   position: absolute;
-
- }
-
+ 
  ::-webkit-scrollbar {
 
    width: 12px;

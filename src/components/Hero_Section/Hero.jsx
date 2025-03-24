@@ -9,7 +9,7 @@ const Hero = () => {
     "Innovate Solution Though MERN",
     "Creating Modern and Responsive User Interface WIth React",
   ];
-  const typingSpeed = 120;
+  const typingSpeed = 90;
   const deletingSpeed = 55;
   const delayBetweenLines = 1000;
 
