@@ -54,7 +54,7 @@ const Hero = () => {
           <div className="tag">WELCOME</div>
         </div>
         <h1>
-          Discober The World Of <br /> <span className="span_name">EMON</span>
+          Discober The World Of <br className="brTag" /> <span className="span_name">EMON</span>
         </h1>
         <div className="text-box">
           <span>{displayedText}</span>

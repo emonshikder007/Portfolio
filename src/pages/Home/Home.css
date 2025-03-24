@@ -127,3 +127,25 @@
    position: absolute;
 
  }
+
+ ::-webkit-scrollbar {
+
+   width: 12px;
+
+ }
+
+ ::-webkit-scrollbar-thumb {
+
+   background: linear-gradient(transparent, rgb(255, 0, 135));
+
+   border-radius: 10px;
+   
+   transition: 1s ease;
+ }
+
+
+ ::-webkit-scrollbar-thumb:hover {
+
+   background: linear-gradient(transparent, #8b00d6);
+
+ }

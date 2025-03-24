@@ -5,20 +5,20 @@ import {
 import AOS from "aos";
 
 const App = () => {
-  useEffect(() => {
-    AOS.init();
+  // useEffect(() => {
+  //   AOS.init();
 
-    const handleWheel = (e) => {
-      e.preventDefault();
-      window.scrollBy({
-        top: e.deltaY * 0.7,
-        behavior: "smooth",
-      });
-    };
+  //   const handleWheel = (e) => {
+  //     e.preventDefault();
+  //     window.scrollBy({
+  //       top: e.deltaY * 0.7,
+  //       behavior: "smooth",
+  //     });
+  //   };
 
-    window.addEventListener("wheel", handleWheel, { passive: false });
-    return () => window.removeEventListener("wheel", handleWheel);
-  }, []);
+  //   window.addEventListener("wheel", handleWheel, { passive: false });
+  //   return () => window.removeEventListener("wheel", handleWheel);
+  // }, []);
 
   return (
     <>

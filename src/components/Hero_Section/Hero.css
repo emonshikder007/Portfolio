@@ -18,7 +18,7 @@
 
     margin-left: 8%;
 
-    z-index: 999;
+     z-index: 999;
 
  }
 
@@ -332,6 +332,12 @@
 
 @media (max-width: 768px) {
 
+    #home {
+
+        overflow-x: hidden;
+
+    }
+
     .content {
 
         margin-top: 20rem;
@@ -348,7 +354,19 @@
 
     .tag-box {
 
-        width: 12rem;
+        width: 8.7rem;
+
+        font-size: 10px;
+
+        margin-bottom: -10px;
+
+    }
+
+    .tag {
+
+        font-size: 1.1rem;
+
+        font-weight: 500;
 
     }
 
@@ -358,4 +376,43 @@
 
     }
 
+    .brTag {
+
+        display: none;
+
+    }
+
+    .text-box {
+
+        font-size: 30px;
+
+        margin-top: -12px;
+
+        height: 120px;
+
+       
+    }
+
+    .btn {
+
+          padding: 1.1rem 1.4rem;
+
+          font-size: 18px;
+
+          font-weight: 500;
+
+          letter-spacing: 0.2px;
+
+          margin-top: 25px;
+
+    }
+
+    .scroll_down {
+
+        display: none;
+
+    }
+
 }
+
+
