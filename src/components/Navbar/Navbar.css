@@ -81,7 +81,7 @@ nav a {
 
     color: #c9c9c9fc;
 
-    transition: color 0.5s ease, transform 0.3s ease;
+    transition: 0.5s ease;
 
     cursor: pointer;
 

@@ -13,7 +13,7 @@ import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
   return (
-    <div>
+    <div className="nn">
       <img className="img" src={gradient} />
       <div className="blur"></div>
 
