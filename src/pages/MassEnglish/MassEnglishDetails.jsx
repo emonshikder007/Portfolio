@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import './MassEnglishDetails.css';
+import "./MassEnglishDetails.css";
 import { Link } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import { MdFullscreen } from "react-icons/md";
@@ -9,7 +9,7 @@ import react_router from "../../assets/react_router.png";
 import vite from "../../assets/Vite.js.png";
 import js from "../../assets/javascript-removebg-preview.png";
 import { IoMdPause } from "react-icons/io";
-import massVideo from '../../assets/massVideo.mp4';
+import massVideo from "../../assets/massVideo.mp4";
 import { FaPlay } from "react-icons/fa6";
 
 const MassENglishDetails = () => {
@@ -53,7 +53,7 @@ const MassENglishDetails = () => {
   useEffect(() => {
     const video = videoRef.current;
     if (video) {
-      video.addEventListener('loadedmetadata', () => {
+      video.addEventListener("loadedmetadata", () => {
         setDuration(video.duration);
       });
     }
@@ -74,7 +74,7 @@ const MassENglishDetails = () => {
     const progress = (video.currentTime / video.duration) * 100;
     setProgress(progress);
     setCurrentTime(video.currentTime);
-    document.documentElement.style.setProperty('--progress', `${progress}%`);
+    document.documentElement.style.setProperty("--progress", `${progress}%`);
   };
 
   const handleSeek = (e) => {
@@ -82,7 +82,10 @@ const MassENglishDetails = () => {
     const seekTime = (video.duration / 100) * e.target.value;
     video.currentTime = seekTime;
     setProgress(e.target.value);
-    document.documentElement.style.setProperty('--progress', `${e.target.value}%`);
+    document.documentElement.style.setProperty(
+      "--progress",
+      `${e.target.value}%`
+    );
   };
 
   const handleFullscreen = () => {
@@ -97,10 +100,12 @@ const MassENglishDetails = () => {
   };
 
   const formatTime = (time) => {
-    if (isNaN(time)) return '00:00';
+    if (isNaN(time)) return "00:00";
     const minutes = Math.floor(time / 60);
     const seconds = Math.floor(time % 60);
-    return `${minutes < 10 ? '0' + minutes : minutes}:${seconds < 10 ? '0' + seconds : seconds}`;
+    return `${minutes < 10 ? "0" + minutes : minutes}:${
+      seconds < 10 ? "0" + seconds : seconds
+    }`;
   };
 
   return (
@@ -116,27 +121,49 @@ const MassENglishDetails = () => {
         <h1>Mass English - English Learning Academy</h1>
       </div>
       <div className="video-player-container">
-      <video
-        ref={videoRef}
-        src={massVideo}
-        onTimeUpdate={handleTimeUpdate}
-        className="video-element"
-      />
-      <div className="controls">
-        <button onClick={togglePlay} className="btn">
-          {isPlaying ? '⏸' : '▶'}
-        </button>
-        <span className="time">{formatTime(currentTime)} / 1:58</span>
-        <input
-          type="range"
-          className="progress-bar"
-          value={progress}
-          max="100"
-          onChange={handleSeek}
+        <video
+          ref={videoRef}
+          src={massVideo}
+          onTimeUpdate={handleTimeUpdate}
+          className="video-element"
         />
-        <button onClick={handleFullscreen} className="btn fullScreen"><MdFullscreen /></button>
+        <div className="controls">
+          <button onClick={togglePlay} className="btnn">
+            {isPlaying ? "⏸" : "▶"}
+          </button>
+          <span className="time">{formatTime(currentTime)} / 1:58</span>
+          <input
+            type="range"
+            className="progress-bar"
+            value={progress}
+            max="100"
+            onChange={handleSeek}
+          />
+          <button onClick={handleFullscreen} className="btnn fullScreen">
+            <MdFullscreen />
+          </button>
+        </div>
       </div>
-    </div>
+      <div className="tech_container">
+        <div className="tech_language">
+          <h1 className="tech_header">Technology I Used To Make This</h1>
+        </div>
+        <div className="languages">
+          {languages.map((language, index) => {
+            return (
+              <div className="react_container" key={index}>
+                <div className="react_header">
+                  <img src={language.img} alt={language.name} />
+                  <h2>{language.name}</h2>
+                </div>
+                <div className="react_text">
+                  <p>{language.description}</p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
     </section>
   );
 };
