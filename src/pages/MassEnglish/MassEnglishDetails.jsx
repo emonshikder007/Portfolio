@@ -8,9 +8,10 @@ import react from "../../assets/react.png";
 import react_router from "../../assets/react_router.png";
 import vite from "../../assets/Vite.js.png";
 import js from "../../assets/javascript-removebg-preview.png";
-import { IoMdPause } from "react-icons/io";
+import clickSound from "../../assets/click.mp3";
 import massVideo from "../../assets/massVideo.mp4";
-import { FaPlay } from "react-icons/fa6";
+import { TbWorldWww } from "react-icons/tb";
+import { FaGithub } from "react-icons/fa";
 
 const MassENglishDetails = () => {
   const languages = [
@@ -108,6 +109,11 @@ const MassENglishDetails = () => {
     }`;
   };
 
+    const playSound = () => {
+      const audio = new Audio(clickSound);
+      audio.play();
+    };
+
   return (
     <section>
       <div className="header_container">
@@ -143,6 +149,29 @@ const MassENglishDetails = () => {
             <MdFullscreen />
           </button>
         </div>
+      </div>
+      <div className="buttons">
+        <a
+         className="livePreview"
+         href="#"
+         onClick={playSound}
+         >
+          Live Preview
+          <div className="live">
+            <TbWorldWww />
+          </div>
+        </a>
+        <a
+          target="_blank"
+          className="github"
+          href="https://github.com/emon-shikder2217/my_portfolio"
+          onClick={playSound}
+        >
+          Code
+          <div className="git">
+            <FaGithub />
+          </div>
+        </a>
       </div>
       <div className="tech_container">
         <div className="tech_language">

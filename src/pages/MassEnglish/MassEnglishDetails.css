@@ -161,3 +161,109 @@
   cursor: pointer;
 
 }
+
+
+.buttons {
+
+  margin-left: 125px;
+
+  margin-top: 40px;
+
+  display: flex;
+  
+  flex-direction: row;
+
+}
+
+.github {
+
+  margin-left: 20px;
+
+  display: flex;
+
+  background: #131317;
+ 
+     padding: 1rem 2.3rem;
+ 
+     border-radius: 15px;
+ 
+     color: #fff;
+ 
+     font-size: 21px;
+ 
+     font-weight: 400;
+ 
+     transition: 0.2s ease;
+ 
+     border: 1px solid rgba(255,255,255,0.1);
+ 
+     cursor: pointer;
+ 
+     font-size: 19px;
+ 
+     font-weight: 700;
+ 
+     color: #c9c9c9fc;
+
+     margin-top: 30px;
+
+     font-family: 'outfit', sans-serif;
+ 
+
+}
+
+.github:hover,
+.livePreview:hover {
+ 
+  background: #32323a;
+
+  box-shadow: 0 0 5px #32323a;
+
+  color: #fff;
+
+}
+
+
+.livePreview {
+
+  display: flex;
+
+  background: #131317;
+ 
+     padding: 1rem 2rem;
+ 
+     border-radius: 15px;
+ 
+     color: #fff;
+ 
+     font-size: 21px;
+ 
+     font-weight: 400;
+ 
+     transition: 0.2s ease;
+ 
+     border: 1px solid rgba(255,255,255,0.1);
+ 
+     cursor: pointer;
+ 
+     font-size: 19px;
+ 
+     font-weight: 700;
+ 
+     color: #c9c9c9fc;
+
+     margin-top: 30px;
+
+     font-family: 'outfit', sans-serif;
+ 
+
+}
+
+.git,
+.live {
+
+  font-size: 26px;
+
+  margin-left: 10px;
+
+}
