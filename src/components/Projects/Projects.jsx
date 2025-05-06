@@ -7,6 +7,7 @@ import "./Projects.css";
 import chatmeee_home from "../../assets/chatmee_home.png";
 import tomato from "../../assets/tomato.png";
 import scientificCalculator from "../../assets/scientific_calculator.png";
+import mass from '../../assets/mass.png';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -23,22 +24,22 @@ export default function HoverEffectCards() {
     {
       img: chatmeee_home,
       title: "ChatMee",
-      route: "/chatmee-details",
+      route: "/chatmee",
     },
     {
       img: tomato,
       title: "Tomato",
-      route: "/tomato-details",
+      route: "/tomato",
     },
     {
       img: scientificCalculator,
       title: "Scientific Calculator",
-      route: "/calculator-details",
+      route: "/calculator",
     },
     {
-      img: "project.png",
-      title: "Project",
-      route: "/project",
+      img: mass,
+      title: "Mass English",
+      route: "/massEnglish",
     },
   ];
 

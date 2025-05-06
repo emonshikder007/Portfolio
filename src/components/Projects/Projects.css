@@ -426,7 +426,7 @@
 
  }
  
- .project-card.project {
+ .project-card.mass-english {
  
    margin-top: 55px;
  
@@ -454,7 +454,7 @@
  
  }
 
- .project-card.project::before {
+ .project-card.mass-english::before {
 
   position: absolute;
 
@@ -484,9 +484,9 @@
  .project-card.chatmee:hover,
  .project-card.scientific-calculator:hover,
  .project-card.tomato:hover,
- .project-card.project:hover {
+ .project-card.mass-english:hover {
 
-  transform: scale(1.03);
+  transform: scale(0.98);
 
  }
 
