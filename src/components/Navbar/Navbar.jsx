@@ -17,7 +17,7 @@ const Navbar = () => {
 
       <nav data-aos="zoom-in" data-aos-duration="800">
         <a data-aos="fade-left" data-aos-duration="1300">
-          Home
+          <span className="linkTxt">Home</span>
         </a>
         <Link
           to="about"
@@ -26,7 +26,7 @@ const Navbar = () => {
           data-aos="fade-left"
           data-aos-duration="1800"
         >
-          About
+          <span className="linkTxt">About</span>
         </Link>
         <Link
           to="skills"
@@ -35,7 +35,7 @@ const Navbar = () => {
           data-aos="fade-left"
           data-aos-duration="2300"
           >
-            Skills
+            <span className="linkTxt">Skills</span>
           </Link>
           <Link
             to="projects"
@@ -44,7 +44,7 @@ const Navbar = () => {
             data-aos="fade-left"
             data-aos-duration="2800"
           >
-            Projects
+            <span className="linkTxt">Projects</span>
           </Link>
           <Link
             to="contact"
@@ -53,7 +53,7 @@ const Navbar = () => {
             data-aos="fade-left"
             data-aos-duration="3000"
           >
-            Contact
+            <span className="linkTxt">Contact</span>
           </Link>
       </nav>
 

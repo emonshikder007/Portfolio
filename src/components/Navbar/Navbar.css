@@ -67,7 +67,7 @@ nav {
 
 nav:hover {
 
-    background: #32323a;
+    background: #27272d;
 
 }
 
@@ -116,6 +116,24 @@ nav a:hover {
     color: #fff;
 
 }
+
+.linkTxt {
+
+    font-size: 19px;
+
+    font-weight: 500;
+
+    color: #c9c9c9d4;
+
+    transition: .4s ease;
+
+}
+
+
+.linkTxt:hover {
+    color: #fff;
+}
+
 
 
 
