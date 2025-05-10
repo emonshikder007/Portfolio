@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Video1.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import { MdFullscreen } from "react-icons/md";
 import clickSound from "../../assets/click.mp3";
@@ -73,10 +73,20 @@ const Video1 = () => {
     }`;
   };
 
+  const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
+
 
   return (
     <>
-      <div className="video-player-container">
+      <div className="video-player-container" onClick={() => window.scrollTo(0, 0)}>
         <video
           ref={videoRef}
           src={massVideo}

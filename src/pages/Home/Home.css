@@ -23,6 +23,32 @@
 
  }
 
+ .body::before {
+
+       position: absolute;
+
+    content: '';
+
+    height: 10%;
+
+    width: 40px;
+
+    box-shadow: 0 0 500px 20px rgb(255, 0, 153),
+                0 0 700px 30px rgb(255, 0, 153),
+                0 0 500px 10px #49066E;
+
+    z-index: 1;
+
+    left: 90%;
+
+   background: rgb(255, 0, 153);
+
+   filter: blur(110px);
+
+ }
+
+
+
  .img {
 
     position: absolute;
@@ -78,6 +104,8 @@
   right: -20%;
 
    top: -10px;
+
+   pointer-events: none;
 
    
 

@@ -7,7 +7,7 @@ import "./Projects.css";
 import chatmeee_home from "../../assets/chatmee_home.png";
 import tomato from "../../assets/tomato.png";
 import scientificCalculator from "../../assets/scientific_calculator.png";
-import mass from '../../assets/mass.png';
+import mass from "../../assets/mass.png";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -56,7 +56,9 @@ export default function HoverEffectCards() {
         </div>
         <div className="cards-container">
           {projects.map((project, index) => {
-            const projectClass = project.title.toLowerCase().replace(/\s+/g, "-");
+            const projectClass = project.title
+              .toLowerCase()
+              .replace(/\s+/g, "-");
 
             const aosAnimations = [
               "fade-down-right",
@@ -79,9 +81,14 @@ export default function HoverEffectCards() {
                 <div className="card">
                   <img src={project.img} alt={project.title} />
                   <div className="arrow_container">
-                    <Link to={project.route} onClick={() => window.scrollTo(0, 0)}>
+                    <Link
+                      to={project.route}
+                      onClick={() => window.scrollTo(0, 0)}
+                    >
                       <FaArrowRight
-                        className={`arrow-icon ${hoveredIndex === index ? "visible" : ""}`}
+                        className={`arrow-icon ${
+                          hoveredIndex === index ? "visible" : ""
+                        }`}
                       />
                     </Link>
                   </div>
