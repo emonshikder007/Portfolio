@@ -1,24 +1,10 @@
 import React, { useEffect } from "react";
-import {
-  Outlet,
-} from "react-router-dom";
-import AOS from "aos";
+import { Outlet } from "react-router-dom";
+import useSmoothScroll from "./SmoothScroll";
 
 const App = () => {
-  // useEffect(() => {
-  //   AOS.init();
 
-  //   const handleWheel = (e) => {
-  //     e.preventDefault();
-  //     window.scrollBy({
-  //       top: e.deltaY * 0.7,
-  //       behavior: "smooth",
-  //     });
-  //   };
-
-  //   window.addEventListener("wheel", handleWheel, { passive: false });
-  //   return () => window.removeEventListener("wheel", handleWheel);
-  // }, []);
+  useSmoothScroll();
 
   return (
     <>

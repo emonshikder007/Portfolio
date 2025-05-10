@@ -2,16 +2,15 @@ import React, { useEffect, useRef, useState } from "react";
 import "./MassEnglishDetails.css";
 import { Link } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
-import { MdFullscreen } from "react-icons/md";
 import css from "../../assets/css_img.png";
 import react from "../../assets/react.png";
 import react_router from "../../assets/react_router.png";
 import vite from "../../assets/Vite.js.png";
 import js from "../../assets/javascript-removebg-preview.png";
 import clickSound from "../../assets/click.mp3";
-import massVideo from "../../assets/massVideo.mp4";
 import { TbWorldWww } from "react-icons/tb";
 import { FaGithub } from "react-icons/fa";
+import Video1 from "../../components/Video1/Video1";
 
 const MassENglishDetails = () => {
   const languages = [
@@ -45,74 +44,12 @@ const MassENglishDetails = () => {
         "CSS is a style sheet language used for describing the presentation of a document written in HTML or XML.",
     },
   ];
-  const videoRef = useRef(null);
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [progress, setProgress] = useState(0);
-  const [duration, setDuration] = useState(0);
-  const [currentTime, setCurrentTime] = useState(0);
-
-  useEffect(() => {
-    const video = videoRef.current;
-    if (video) {
-      video.addEventListener("loadedmetadata", () => {
-        setDuration(video.duration);
-      });
-    }
-  }, []);
-
-  const togglePlay = () => {
-    const video = videoRef.current;
-    if (isPlaying) {
-      video.pause();
-    } else {
-      video.play();
-    }
-    setIsPlaying(!isPlaying);
-  };
-
-  const handleTimeUpdate = () => {
-    const video = videoRef.current;
-    const progress = (video.currentTime / video.duration) * 100;
-    setProgress(progress);
-    setCurrentTime(video.currentTime);
-    document.documentElement.style.setProperty("--progress", `${progress}%`);
-  };
-
-  const handleSeek = (e) => {
-    const video = videoRef.current;
-    const seekTime = (video.duration / 100) * e.target.value;
-    video.currentTime = seekTime;
-    setProgress(e.target.value);
-    document.documentElement.style.setProperty(
-      "--progress",
-      `${e.target.value}%`
-    );
-  };
-
-  const handleFullscreen = () => {
-    const video = videoRef.current;
-    if (video.requestFullscreen) {
-      video.requestFullscreen();
-    } else if (video.webkitRequestFullscreen) {
-      video.webkitRequestFullscreen();
-    } else if (video.msRequestFullscreen) {
-      video.msRequestFullscreen();
-    }
-  };
-
-  const formatTime = (time) => {
-    if (isNaN(time)) return "00:00";
-    const minutes = Math.floor(time / 60);
-    const seconds = Math.floor(time % 60);
-    return `${minutes < 10 ? "0" + minutes : minutes}:${
-      seconds < 10 ? "0" + seconds : seconds
-    }`;
-  };
 
     const playSound = () => {
       const audio = new Audio(clickSound);
       audio.play();
     };
+  
 
   return (
     <section>
@@ -126,30 +63,9 @@ const MassENglishDetails = () => {
       <div className="main_text">
         <h1>Mass English - English Learning Academy</h1>
       </div>
-      <div className="video-player-container">
-        <video
-          ref={videoRef}
-          src={massVideo}
-          onTimeUpdate={handleTimeUpdate}
-          className="video-element"
-        />
-        <div className="controls">
-          <button onClick={togglePlay} className="btnn">
-            {isPlaying ? "⏸" : "▶"}
-          </button>
-          <span className="time">{formatTime(currentTime)} / 1:58</span>
-          <input
-            type="range"
-            className="progress-bar"
-            value={progress}
-            max="100"
-            onChange={handleSeek}
-          />
-          <button onClick={handleFullscreen} className="btnn fullScreen">
-            <MdFullscreen />
-          </button>
-        </div>
-      </div>
+
+      <Video1 />
+
       <div className="buttons">
         <a
          className="livePreview"
