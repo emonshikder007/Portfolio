@@ -40,7 +40,11 @@ export default function HoverEffectCards() {
       img: mass,
       title: "Mass English",
       route: "/massEnglish",
-    },
+    },{
+      
+      title: "Fx Sound",
+      route: "/fxSound",
+    }
   ];
 
   const [hoveredIndex, setHoveredIndex] = useState(null);

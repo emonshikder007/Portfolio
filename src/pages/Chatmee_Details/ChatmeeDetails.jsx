@@ -5,7 +5,7 @@ import { FaArrowLeft } from "react-icons/fa";
 import css from "../../assets/css_img.png";
 import react from "../../assets/react.png";
 import node from "../../assets/Node.js.png";
-import express from "../../assets/Express.png";
+import express from "../../assets/express.png";
 import jwt from "../../assets/icons8-json-web-token-48.png";
 import mongodb from "../../assets/MongoDB.png";
 import mongoose from "../../assets/Mongoose.js.png";

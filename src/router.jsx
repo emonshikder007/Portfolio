@@ -5,6 +5,7 @@ import ChatWithMeInfo from "./pages/Chatmee_Details/ChatmeeDetails";
 import SintificCalculatorDetails from "./pages/SintificCalculator_Details/SintificCalculatorDetails";
 import TomatoDetails from './pages/Tomato_Details/TomatoDetails'
 import MassEnglishDetails from "./pages/MassEnglish/MassEnglishDetails";
+import Fx from "./pages/Fx-sound_Details/Fx";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: "/massEnglish",
         element: <MassEnglishDetails />
+      },
+      {
+        path: "/fxSound",
+        element: <Fx />
       }
     ]
   }

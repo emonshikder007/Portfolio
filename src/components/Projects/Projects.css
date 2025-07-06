@@ -450,7 +450,7 @@
 
  position: relative;
 
- transition: 0.1s ease;
+ transition: .001s ease;
  
  }
 
@@ -486,7 +486,7 @@
  .project-card.tomato:hover,
  .project-card.mass-english:hover {
 
-  transform: scale(0.98);
+  transform: scale(.99);
 
  }
 
